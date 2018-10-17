@@ -1,0 +1,8 @@
+NÅR DU SKAL COMMIT:
+ 	Lav commit navne der fortæller om en ændring fx: 
+
+		"Deleted <file>", 
+		"Updated <File>", 
+		"Added <File>", 
+
+	din commit må også meget gerne uddybes mere hvis det er nødvendigt.
