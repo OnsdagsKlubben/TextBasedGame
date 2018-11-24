@@ -3,18 +3,37 @@ package utilities;
 public final class UserInformation 
 {
     private static OSType osType = null;
+    private static String userHomeDirectory = null;
 
-    public OSType getOSType()
+    private UserInformation(){};
+
+    public static OSType getOSType()
     {
         return osType;
     }
 
-    private UserInformation() {};
+    public static String getUserHomeDirectory()
+    {
+        return userHomeDirectory;
+    }
 
-    public static void findAndSetUserOS()
+    public static void getInformation()
+    {
+        findAndSetUserOS();
+        findAndSetUserHomeDirectory();
+    }
+
+    private static void findAndSetUserHomeDirectory() 
+    {
+        if (userHomeDirectory == null) {
+            userHomeDirectory = System.getProperty("user.home");
+        }
+    }
+
+    private static void findAndSetUserOS()
     {
         if (osType == null) {
-            String type = System.getProperty("os.type").toLowerCase();
+            String type = System.getProperty("os.name").toLowerCase();
 
             if (type.contains("windows")) 
             {
