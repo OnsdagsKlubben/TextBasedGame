@@ -5,7 +5,6 @@ public final class Program
     public static void main(String[] args) 
     {
         init();
-        System.out.println(UserInformation.getUserHomeDirectory());
     }
 
     public static void init()

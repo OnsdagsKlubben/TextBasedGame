@@ -17,6 +17,7 @@ public final class GameManager
     public void start()
     {
         running = true;
+        loop();
     }
 
     private void loop()
