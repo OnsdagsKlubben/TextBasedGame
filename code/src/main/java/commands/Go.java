@@ -6,12 +6,12 @@ public class Go extends Command
 {
     public Go() 
     {
-        keyword = "go";
+        this.keyword = "go";
     }
 
     @Override
     public void runCommandFunction(GameController controller, String[] args) 
     {
-
+        
     }
 }
