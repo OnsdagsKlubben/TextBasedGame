@@ -1,0 +1,151 @@
+System.out.println(“
+Du har i flere år, sommer og vinter, vandret rundt i verden. Du har kun det tøj, du går i, en vandrestav, en rygsæk og nogle ganske få penge. Sensommerdage er ved at gå på hæld. Solen går snart ned, men du er tæt på landsbyen, hvor nogle af dine venner bor. Her regner du med at få en hyggelig aften og en god nats søvn, før du fortsætter din rejse. Ganske rigtigt. Efter en varm velkomst, et hyggeligt (og meget lækkert) måltid sætter I jer til rette i stuen. Dine venner vil jo gerne hører nyt fra den store verden og hvad du selv har oplevet. Det er langsomt blevet mørkere og i skæret af lyset fra en tændt pejs, bliver du overtalt til at fortælle om dengang, at du løste gåden om Det forbandede hus. Du fortæller, hvordan du stod foran døren ind til huset. En egetræsdør, der er lukket, og … … 
+
+
+
+Vinden blafrer i mine gamle klæder, da jeg står foran den gamle egetræsdør. 
+I det samme jeg vender ryggen mod døren lukkes mine øjne. En sødligt lugt, blandet af metal og blod er det sidste jeg husker. 
+Jeg vågner med i et mørkt rum. Tobakspibens glød fra rummets nordlige hjørne kaster skygger over rummet. Bag pibens røg, anser jeg en gammel mand, gyngende og knirkende i en stol. 
+Jeg skimmer rummet og ser en mahogni reol, ved siden af manden. Bag mig, i rummets sydlige del står et stearinlys på et træbord. 
+Det er nat, kan jeg se gennem egetræsdøren.”);
+
+~~~~~~~~~~~~~~~~~~~~~~~~~
+Dirigér rundt for at gå til følgende:
+Gammel mand
+Mahogni reol
+Træbord
+Egetræsdør (forlad spil)
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+GAMESCENARIO 1
+	if (1)
+Hej fremmede, 
+Spøgelset AsgJar prøvede forgæves at dræbe dig.  
+Han havde ikke nok styrke, og har nu gemt sig på slottet.Gennemse rummene for at finde spøgelset og opnå din hævn. 
+
+find sedlen med gåden for at komme til næste rum. 
+
+firstRoomMenu();
+
+
+
+	if (2)
+Du famler i blinde og får fat i en æske tændstikker og lægger dem i lommen
+
+if (3)
+Du famler i mørket og får fingrene i stearinlyset. 
+Stearinlyset er din eneste lyskilde i rummet. Du har intet at tænde lyset med. Led videre.
+
+if (4)
+Du forlader nu spillet - er du sikker?
+~~~~~~~~~~~~~~~~~~~~~~~~
+Dirigér rundt for at gå til følgende:
+Ja
+Nej
+~~~~~~~~~~~~~~~~~~~~~~~~	
+
+
+
+
+GAMESTATE 2
+if (1)
+Hej fremmede, 
+Spøgelset AsgJar prøvede forgæves at dræbe dig.  
+Han havde ikke nok styrke, og har nu gemt sig på slottet.Gennemse rummene for at finde spøgelset og opnå din hævn. 
+
+find sedlen med gåden for at komme til næste rum. 
+
+	if (2)
+Du famler i blinde du finder intet nyt.	
+~~~~~~~~~~~~~~~~~~~~~~~~
+Dirigér rundt for at gå til følgende:
+Gammel mand
+Træbord
+Egetræsdør (forlad spil)
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+if (3)
+Du famler i blinde og får fingrene i stearinlyset, du hiver tændstikæsken op af lommen og tænder stearinlyset. Et varmt lys breder sig over rummet. 
+~~~~~~~~~~~~~~~~~~~~~~~~
+Dirigér rundt for at gå til følgende:
+Gammel mand
+Mahogni reol
+Egetræsdør (forlad spil)
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+if (4)
+Du forlader nu spillet - er du sikker?
+~~~~~~~~~~~~~~~~~~~~~~~~
+Dirigér rundt for at gå til følgende:
+Ja
+Nej
+~~~~~~~~~~~~~~~~~~~~~~~~	
+	if (1)
+		Du vender tilbage til spillet.
+if (2)	
+		Kom snart igen…..
+
+~~~~~~~~~~~~~~~~~~~~~~~~~
+Dirigér rundt for at gå til følgende:
+Mahogni reol
+Træbord
+Egetræsdør (forlad spil)
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+GAMESTATE 3
+if (1)
+Hej fremmede, 
+Spøgelset AsgJar prøvede forgæves at dræbe dig.  
+Han havde ikke nok styrke, og har nu gemt sig på slottet.
+Gennemse rummene for at finde spøgelset og opnå din hævn. 
+
+find sedlen med gåden for at komme til næste rum. 
+
+	if (2)
+Lyset 
+~~~~~~~~~~~~~~~~~~~~~~~~
+Dirigér rundt for at gå til følgende:
+Gammel mand
+Træbord
+Egetræsdør (forlad spil)
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+if (3)
+Et støvet tomt træbord - intet at finde.
+~~~~~~~~~~~~~~~~~~~~~~~~
+Dirigér rundt for at gå til følgende:
+Gammel mand
+Mahogni reol
+Egetræsdør (forlad spil)
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+if (4)
+Du forlader nu spillet - er du sikker?
+~~~~~~~~~~~~~~~~~~~~~~~~
+Dirigér rundt for at gå til følgende:
+Ja
+Nej
+~~~~~~~~~~~~~~~~~~~~~~~~	
+	if (1)
+		Du vender tilbage til spillet.
+if (2)	
+		Kom snart igen…..
+
+~~~~~~~~~~~~~~~~~~~~~~~~~
+Dirigér rundt for at gå til følgende:
+Mahogni reol
+Træbord
+Egetræsdør (forlad spil)
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+ 
+
+Dør ? Mand (dialog og gåde) ? reol ? finde rigtig bog (ikke nok lys til at finde alle) ? tænd stearinlys? find rigtige bog ? nøgle i bogen til døren. 
+
+
+
+

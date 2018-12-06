@@ -24,11 +24,15 @@ public class Player
                 if (inventory[i] == null) 
                 {
                     inventory[i] = item;
-                    DisplayHandler.displayLn("You added " + item + " to your backpack!");    
+                    DisplayHandler.displayLn("Du tilføjede " + item + " til din rygsæk!");
+                    break;  
                 }
             }
         }
-        DisplayHandler.displayLn("You don´t have enough space for that!");
+        else
+        {
+            DisplayHandler.displayLn("Du har ikke nok plads i din rygsæk!");
+        }
     }
 
     public void removeItem(String item)
@@ -44,9 +48,8 @@ public class Player
 
     public boolean hasItem(String item)
     {
-        for (int i = 0; i < inventory.length-1; i++) {
-            
-
+        for (int i = 0; i < inventory.length-1; i++) 
+        {    
             if (inventory[i] != null && item.toLowerCase().equals(inventory[i].toLowerCase())) 
             {
                 return true;
@@ -57,13 +60,18 @@ public class Player
 
     public void printInventory()
     {
-        DisplayHandler.displayLn("Your backpack contains these items:");
+        DisplayHandler.displayLn("Din rygsæk indeholder disse ting:");
 
         for (int i = 0; i < inventory.length; i++) 
         {
-            DisplayHandler.displayLn(
-                "[" + i + "] " + inventory[i] + "\n"
-                );    
+            if (inventory[i] != null) 
+            {
+                DisplayHandler.displayLn( "[" + i + "] " + inventory[i] );    
+            }
+            else
+            {
+                DisplayHandler.displayLn("[" + i + "]");
+            }
         }
     }
 

@@ -24,7 +24,7 @@ public final class UserInformation
 
     private static void findAndSetOSType()
     {
-        String osName = System.getProperty("user.name");
+        String osName = System.getProperty("os.name");
 
         if (osName.toLowerCase().contains("windows")) 
         {

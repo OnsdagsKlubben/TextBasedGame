@@ -1,5 +1,6 @@
 package game;
 
+import utilities.DisplayHandler;
 import utilities.InputHandler;
 
 public class DemoGame extends Game 
@@ -23,9 +24,12 @@ public class DemoGame extends Game
         
         while (true) 
         {
+
             missionText.firstRoomMenu();
 
             int userPick = InputHandler.getInt();
+
+            DisplayHandler.clearDisplay();
 
             if (userPick == 1)
             {
@@ -33,21 +37,21 @@ public class DemoGame extends Game
                 continue;
             }
             
-            if (userPick == 2 && !player.hasItem("Matches") && !hasBrightness)
+            if (userPick == 2 && !player.hasItem("Tændstikker") && !hasBrightness)
             {
                 missionText.reolTekstEt();
                 //inventory.add(1);
-                player.addItem("Matches");
+                player.addItem("Tændstikker");
                 continue;
             }
             
-            if (userPick == 2 && player.hasItem("Matches") && !hasBrightness)
+            if (userPick == 2 && player.hasItem("Tændstikker") && !hasBrightness)
             {
                 missionText.reolTekstTo();
                 continue;      
             }
             
-            if (userPick == 2 && player.hasItem("Matches") && hasBrightness)
+            if (userPick == 2 && player.hasItem("Tændstikker") && hasBrightness)
             {
                 missionText.reolTekstTre();  
                 double userPickPi = 0; 
@@ -67,25 +71,30 @@ public class DemoGame extends Game
                 }
             }
             
-            if (userPick == 3 && !player.hasItem("Matches") && !hasBrightness)
+            if (userPick == 3 && !player.hasItem("Tændstikker") && !hasBrightness)
             {
                 missionText.træBordTekstEt();        
             }
             
-            if (userPick == 3 && player.hasItem("Matches") && !hasBrightness)
+            if (userPick == 3 && player.hasItem("Tændstikker") && !hasBrightness)
             {
                 missionText.træBordTekstTo();
                 hasBrightness = true;
                 continue;
             }
             
-            if (userPick == 3 && player.hasItem("Matches") && hasBrightness)
+            if (userPick == 3 && player.hasItem("Tændstikker") && hasBrightness)
             {
                 missionText.træBordTekstTre();
                 //continue;
             }
-                    
+            
             if (userPick == 4)
+            {
+                player.printInventory();
+            }
+                    
+            if (userPick == 5)
             {
                 missionText.exitTekst();
                 userPick = InputHandler.getInt();   
@@ -96,15 +105,9 @@ public class DemoGame extends Game
                 }
                 else if (userPick == 2)
                 {
-                    System.out.println("Returning");
+                    missionText.backToExitTekst();
                 }        
             }
-            
-            if (userPick == 5)
-            {
-                player.printInventory();
-            }
-
         }
     }
 }

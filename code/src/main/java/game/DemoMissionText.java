@@ -12,14 +12,14 @@ public class DemoMissionText
 
    public void firstRoomMenu()
    {
-      System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+      System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
       System.out.println("Dirigér rundt for at gå til følgende:");
       System.out.println("1.\tGammel mand");
       System.out.println("2.\tMahogni reol");
       System.out.println("3.\tTræbord");
-      System.out.println("4.\tEgetræsdør (forlad spil)");
-      System.out.println("5.\tInventory");
-      System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+      System.out.println("4.\tInventory");
+      System.out.println("5.\tEgetræsdør (forlad spil)");
+      System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
    }
 
    public void gammelMandTekst()
@@ -70,6 +70,11 @@ public class DemoMissionText
    {
       System.out.println("Du forlader nu spillet - er du sikker?");   
       System.out.println("1. Leave\n2. Return to game");  
+   }
+   
+   public void backToExitTekst()
+   {
+      System.out.println("Tilbage til spillet");
    }
    
    public void roomTwoEntrance()
