@@ -1,5 +1,7 @@
 package game;
 
+import utilities.DisplayHandler;
+
 public class Player 
 {
     private static final int INVENTORY_SIZE = 3;
@@ -22,11 +24,11 @@ public class Player
                 if (inventory[i] == null) 
                 {
                     inventory[i] = item;
-                    System.out.println("You added " + item + " to your backpack!");    
+                    DisplayHandler.displayLn("You added " + item + " to your backpack!");    
                 }
             }
         }
-        System.out.print("You don´t have enough space for that!");
+        DisplayHandler.displayLn("You don´t have enough space for that!");
     }
 
     public void removeItem(String item)
