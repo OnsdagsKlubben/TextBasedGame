@@ -1,4 +1,4 @@
-package utilities;
+package userinformation;
 
 public enum OSType
 {

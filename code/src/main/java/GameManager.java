@@ -1,46 +1,37 @@
-import controllers.GameController;
+import game.Game;
 
 public final class GameManager 
 {
-    private static GameManager instance = null;
-    private GameController gameController;
-    private boolean running = false;
+    private Game currentGame;
 
-    private GameManager() {};
+    /**
+     * The single instance of GameManager
+     */
+    public static GameManager instance = null;
+    
+    private GameManager() {}
 
     public static GameManager getInstance()
     {
         if (instance == null) 
         {
-            instance = new GameManager();
+            instance = new GameManager();    
         }
         return instance;
     }
 
-    private void initComponents()
+    public void loadGame(Game game)
     {
-        gameController = GameController.getInstance();
+        currentGame = game;
     }
 
-    public void start()
+    public void startGame()
     {
-        initComponents();
-        running = true;
-        loop();
+        currentGame.startAdventure();
     }
 
-    private void loop()
+    public void exit()
     {
-        while (running) 
-        {
-            break;
-        }
-        exit();
+        System.exit(-1);
     }
-
-    private void exit()
-    {
-        System.exit(0);
-    }
-    
 }
