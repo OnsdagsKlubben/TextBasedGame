@@ -28,6 +28,7 @@ public final class GameManager
     public void startGame()
     {
         currentGame.startAdventure();
+        exit();
     }
 
     public void exit()

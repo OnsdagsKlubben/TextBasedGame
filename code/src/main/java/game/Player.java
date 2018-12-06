@@ -42,6 +42,31 @@ public class Player
         }
     }
 
+    public boolean hasItem(String item)
+    {
+        for (int i = 0; i < inventory.length-1; i++) {
+            
+
+            if (inventory[i] != null && item.toLowerCase().equals(inventory[i].toLowerCase())) 
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void printInventory()
+    {
+        DisplayHandler.displayLn("Your backpack contains these items:");
+
+        for (int i = 0; i < inventory.length; i++) 
+        {
+            DisplayHandler.displayLn(
+                "[" + i + "] " + inventory[i] + "\n"
+                );    
+        }
+    }
+
     private boolean hasInventorySpace()
     {
         for (int i = 0; i < inventory.length; i++) 
