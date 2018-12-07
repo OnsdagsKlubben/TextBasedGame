@@ -1,5 +1,8 @@
 package userinformation;
 
+/**
+ * @author Søren Carlsen & Frederik Lundbeck
+ */
 public final class UserInformation 
 {
     private static OSType osType;

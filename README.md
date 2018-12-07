@@ -1,1 +1,3 @@
-# RolePlayingGame :fire: :dragon_face: 
+#   Text based adventure
+##  A school assignment
+

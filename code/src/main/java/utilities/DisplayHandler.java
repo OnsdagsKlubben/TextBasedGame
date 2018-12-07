@@ -9,6 +9,7 @@ import userinformation.UserInformation;
  * The DisplayHandler class handles displaying things to the screen. <p>
  * Everything in the application should use DisplayHandler if something
  * needs to be written to the console.
+ * @author Nicklas List & Frederik Lundbeck
  */
 public final class DisplayHandler 
 {

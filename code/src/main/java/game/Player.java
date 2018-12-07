@@ -4,6 +4,7 @@ import utilities.DisplayHandler;
 
 /**
  * The player class holds useful information and methods about the player, such as inventory and name.
+ * @author Frederik Lundbeck & Søren Carlsen
  */
 public class Player 
 {

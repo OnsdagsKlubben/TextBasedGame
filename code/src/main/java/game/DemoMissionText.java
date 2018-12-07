@@ -3,7 +3,7 @@ package game;
 /**
  * Stores every text in the story.
  * This class was created so the different language feature could work. (not yet implemented)
- * @author Marcus Bender
+ * @author Marcus Bender & Nicklas List
  */
 public class DemoMissionText 
 {

@@ -6,6 +6,7 @@ import java.util.Scanner;
 /**
  * The InputHandler class is used for receiving input from the player
  * and parsing them to integers, doubles or strings
+ * @author Søren Carlsen & Marcus Bender
  */
 public class InputHandler 
 {
