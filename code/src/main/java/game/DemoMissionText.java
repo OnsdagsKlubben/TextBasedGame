@@ -1,32 +1,45 @@
 package game;
 
+/**
+ * Stores every text in the story.
+ * This class was created so the different language feature could work. (not yet implemented)
+ * @author Marcus Bender
+ */
 public class DemoMissionText 
 {
     public void historieStart()
    {
-      System.out.println("Vinden blafrer i mine gamle klæder, da jeg står foran den gamle egetræsdør\n" +
-      "I det samme jeg vender ryggen mod døren lukkes mine øjne. En sødligt lugt, blandet af metal og blod er det sidste jeg husker.\n" +
-      "Jeg vågner med i et mørkt rum. Tobakspibens glød fra rummets nordlige hjørne kaster skygger over rummet. Bag pibens røg, anser jeg en gammel mand, gyngende og knirkende i en stol.\n" +
-      "Jeg skimmer rummet og ser en mahogni reol, ved siden af manden. Bag mig, i rummets sydlige del står et stearinlys på et træbord. \nDet er nat, kan jeg se gennem egetræsdøren.\n");
+      System.out.println(
+      "Vinden blafrer i mine gamle klæder, da jeg står foran den gamle egetræsdør\n" +
+      "I det samme jeg vender ryggen mod døren lukkes mine øjne.\n" + 
+      "En sødlig lugt, blandet af metal og blod er det sidste jeg husker.\n" +
+      "Jeg vågner med i et mørkt rum. Tobakspibens glød fra rummets nordlige hjørne kaster skygger over rummet.\n" +
+      "Bag pibens røg, anser jeg en gammel mand, gyngende og knirkende i en stol.\n" +
+      "Jeg skimmer rummet og ser en mahogni reol, ved siden af manden.\n" +
+      "Bag mig, i rummets sydlige del står et stearinlys på et træbord.\n" + 
+      "Det er nat, kan jeg se gennem egetræsdøren.\n");
    }  
 
    public void firstRoomMenu()
    {
-      System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-      System.out.println("Dirigér rundt for at gå til følgende:");
-      System.out.println("1.\tGammel mand");
-      System.out.println("2.\tMahogni reol");
-      System.out.println("3.\tTræbord");
-      System.out.println("4.\tInventory");
-      System.out.println("5.\tEgetræsdør (forlad spil)");
-      System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+      System.out.println(
+         "\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n" +
+         "Dirigér rundt for at gå til følgende:\n" +
+         "1.\tGammel mand\n" +
+         "2.\tMahogni reol\n" +
+         "3.\tTræbord\n" +
+         "4.\tInventory\n" +
+         "5.\tEgetræsdør (forlad spil)\n" +
+         "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n");
    }
 
    public void gammelMandTekst()
    {
-      System.out.println("Hej fremmede, \n"+
-      "Spøgelset AsgJar prøvede forgæves at dræbe dig \n"+
-      "Han havde ikke nok styrke, og har nu gemt sig på slottet. Gennemse rummene for at finde spøgelset og opnå din hævn. \n\n"+
+      System.out.println(
+      "Hej fremmede,\n"+
+      "Spøgelset AsgJar prøvede forgæves at dræbe dig\n"+
+      "Han havde ikke nok styrke, og har nu gemt sig på slottet.\n"+
+      "Gennemse rummene for at finde spøgelset og opnå din hævn.\n\n"+
       "Find døren til næste rum.");
    }
    
@@ -49,8 +62,8 @@ public class DemoMissionText
    
    public void træBordTekstEt()
    {
-      System.out.println("Du famler i mørket og får fingrene i stearinlyset." +
-      " Stearinlyset er din eneste lyskilde i rummet. Du har intet at tænde lyset med. Led videre.");
+      System.out.println("Du famler i mørket og får fingrene i stearinlyset.\n" +
+      "Stearinlyset er din eneste lyskilde i rummet. Du har intet at tænde lyset med. Led videre.");
    }
    
    public void træBordTekstTo()

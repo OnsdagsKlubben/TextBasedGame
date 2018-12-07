@@ -3,17 +3,33 @@ package game;
 import utilities.DisplayHandler;
 import utilities.InputHandler;
 
+/**
+ * A subclass to the {@code Game} class. This class
+ * holds the story logic and variables
+ * @author Marcus Bender
+ */
 public class DemoGame extends Game 
 {
+    /**
+     * the DemoMissionText object which holds every text, that is used in the {@code startAdventure()} method.
+     */
     private DemoMissionText missionText;
     private boolean hasBrightness = false;
 
+    /**
+     * The constructor that calls the super constructor and passes in the {@code Player} object.
+     * it also initializes the {@code missionText}.
+     * @param player the {@code Player} object
+     */
     public DemoGame(Player player) 
     {
         super(player);
         missionText = new DemoMissionText();
     }
     
+    /**
+     * The overridden method that holds all the story logic
+     */
     @Override
     public void startAdventure() 
     {
