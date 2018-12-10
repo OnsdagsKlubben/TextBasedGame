@@ -6,7 +6,7 @@ import utilities.InputHandler;
 /**
  * A subclass to the {@code Game} class. This class
  * holds the story logic and variables
- * @author Marcus Bender
+ * @author Marcus Bender & Nicklas List
  */
 public class DemoGame extends Game 
 {

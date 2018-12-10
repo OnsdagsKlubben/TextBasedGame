@@ -78,13 +78,17 @@ public class InputHandler
         {
             if (!Character.isDigit(input.charAt(i))) 
             {
+                if(input.charAt(i) != '.' || input.charAt(i) != ',')
+                {
+                    continue;
+                }
                 return false;
             }
         }
 
         try 
         {
-            nf.parse(input);
+            Double.parseDouble(input);
             return true;    
         } 
         catch (Exception e) 
