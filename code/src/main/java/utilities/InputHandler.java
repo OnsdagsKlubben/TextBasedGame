@@ -72,8 +72,6 @@ public class InputHandler
      */
     private static boolean isNumerical(String input)
     {
-        NumberFormat nf = NumberFormat.getInstance();
-
         for (int i = 0; i < input.length(); i++) 
         {
             if (!Character.isDigit(input.charAt(i))) 
